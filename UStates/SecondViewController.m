@@ -11,6 +11,8 @@
 @interface SecondViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *capLabel;
+
 
 @end
 
@@ -19,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _nameLabel.text = _stateName;
+    _capLabel.text = _capName;
     // Do any additional setup after loading the view.
 }
 

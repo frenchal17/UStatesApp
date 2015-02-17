@@ -12,6 +12,7 @@
 
 //Creating Array for state names
 @property (copy, nonatomic) NSArray *states;
+@property (copy, nonatomic) NSArray *capitals;
 
 @end
 

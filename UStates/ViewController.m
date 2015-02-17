@@ -16,6 +16,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //Filling array of state names upon loading
@@ -29,6 +30,17 @@
                     @"Oklahoma", @"Oregon", @"Pennsylvania", @"Rhode Island", @"South Carolina",
                     @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont",
                     @"Virginia", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming"];
+    
+    self.capitals = @[@"Montgomery", @"Juneau", @"Phoenix", @"Little Rock", @"Sacramento",
+                      @"Denver", @"Hartford", @"Dover", @"Tallahassee", @"Atlanta",
+                      @"Honolulu", @"Boise", @"Springfield", @"Indianapolis", @"Des Moines",
+                      @"Topeka", @"Frankfort", @"Baton Rouge", @"Augusta", @"Annapolis",
+                      @"Boston", @"Lansing", @"Saint Paul", @"Jackson", @"Jefferson City",
+                      @"Helena", @"Lincoln", @"Carson City", @"Concord", @"Trenton",
+                      @"Santa Fe", @"Albany", @"Raleigh", @"Bismarck", @"Columbus",
+                      @"Oklahoma City", @"Salem", @"Harrisburg", @"Providence", @"Columbia",
+                      @"Pierre", @"Nashville", @"Austin", @"Salt Lake City", @"Montpelier",
+                      @"Richmond", @"Olympia", @"Charleston", @"Madison", @"Cheyenne"];
     // Do any additional setup after loading the view, typically from a nib.
     
 }
@@ -44,7 +56,7 @@
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Don't quite understand identifier bit.
+    //Don't quite understand identifier bit. Has to do with interpreting events?
     //Difference between SimpleIdentifier and SimpleTableIdentifier?
     NSString *SimpleIdentifier = @"simpleIdentifier";
     
@@ -66,11 +78,20 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"transferDetail"]){
+        int i;
         //IndexPath generally means [___]
         //NSIndexPath *indexPath = [self.indexPathForSelectedRow];
         //SecondViewController *destViewController = segue.destinationViewController.stateName.text;
+        while (true) {
+            if ([self.states[i] isEqualToString:((UITableViewCell*)sender).textLabel.text]){
+                break;
+            } else {
+                i++;
+            }
+        }
         
         ((SecondViewController*)segue.destinationViewController).stateName = ((UITableViewCell*)sender).textLabel.text;
+        ((SecondViewController*)segue.destinationViewController).capName = self.capitals[i];
         //segue.destinationViewController.stateName.text = ((UITableViewCell*)sender).textLabel.text;
         
         //destViewController.title = self.states[indexPath.row];

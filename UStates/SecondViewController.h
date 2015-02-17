@@ -11,5 +11,6 @@
 @interface SecondViewController : UIViewController
 
 @property NSString* stateName;
+@property NSString* capName;
 
 @end

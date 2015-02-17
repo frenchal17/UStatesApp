@@ -10,31 +10,31 @@
 	<string>UStates</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1965820EAA36C746C342BAAE4E2CF47A5E2F31CA</key>
-		<string>https://github.com/frenchal17/AppDev-Git.git</string>
+		<key>CCA7FF3E9FC4CD85980500DDAB60609A103D206F</key>
+		<string>https://github.com/frenchal17/UStatesApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UStates/UStates.xcodeproj</string>
+	<string>UStates.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1965820EAA36C746C342BAAE4E2CF47A5E2F31CA</key>
-		<string>../../..</string>
+		<key>CCA7FF3E9FC4CD85980500DDAB60609A103D206F</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/frenchal17/AppDev-Git.git</string>
+	<string>https://github.com/frenchal17/UStatesApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1965820EAA36C746C342BAAE4E2CF47A5E2F31CA</string>
+	<string>CCA7FF3E9FC4CD85980500DDAB60609A103D206F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1965820EAA36C746C342BAAE4E2CF47A5E2F31CA</string>
+			<string>CCA7FF3E9FC4CD85980500DDAB60609A103D206F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AppDev%20Git</string>
+			<string>UStates</string>
 		</dict>
 	</array>
 </dict>
